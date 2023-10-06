@@ -1,9 +1,11 @@
 ; Identifiers
 
-[
+(([
     (field)
     (field_identifier)
-] @property
+    ] @property)
+      (#set! "priority" 200)
+)
 
 (variable) @variable
 
@@ -28,26 +30,32 @@
 
 ; Delimiters
 
-"." @punctuation.delimiter
-"," @punctuation.delimiter
+([
+("." @punctuation.delimiter)
+("," @punctuation.delimiter)
+  ] (#set! "priority" 200))
 
-"{{" @punctuation.bracket
-"}}" @punctuation.bracket
-"{{-" @punctuation.bracket
-"-}}" @punctuation.bracket
-")" @punctuation.bracket
-"(" @punctuation.bracket
+(
+ [("{{" @punctuation.bracket)
+  ("}}" @punctuation.bracket)
+  ("{{-" @punctuation.bracket)
+  ("-}}" @punctuation.bracket)
+  (")" @punctuation.bracket)
+  ("(" @punctuation.bracket)
+  ] (#set! "priority" 200))
 
 ; Keywords
+([
+("else" @keyword)
+("if" @keyword)
+("range" @keyword)
+("with" @keyword)
+("end" @keyword)
+("template" @keyword)
+("define" @keyword)
+("block" @keyword)]
+(#set! "priority" 200))
 
-"else" @keyword
-"if" @keyword
-"range" @keyword
-"with" @keyword
-"end" @keyword
-"template" @keyword
-"define" @keyword
-"block" @keyword
 
 ; Literals
 
@@ -73,3 +81,4 @@
 
 (comment) @comment
 (ERROR) @error
+

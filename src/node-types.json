@@ -319,6 +319,10 @@
             "named": true
           },
           {
+            "type": "html",
+            "named": true
+          },
+          {
             "type": "if_action",
             "named": true
           },
@@ -556,6 +560,10 @@
             "named": true
           },
           {
+            "type": "html",
+            "named": true
+          },
+          {
             "type": "if_action",
             "named": true
           },
@@ -675,6 +683,21 @@
     }
   },
   {
+    "type": "field_identifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "field_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "function_call",
     "named": true,
     "fields": {
@@ -698,6 +721,264 @@
           }
         ]
       }
+    }
+  },
+  {
+    "type": "html",
+    "named": true,
+    "fields": {
+      "child": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "-}}",
+            "named": false
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "block_action",
+            "named": true
+          },
+          {
+            "type": "chained_pipeline",
+            "named": true
+          },
+          {
+            "type": "comment",
+            "named": true
+          },
+          {
+            "type": "define_action",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "false",
+            "named": true
+          },
+          {
+            "type": "field",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "html",
+            "named": true
+          },
+          {
+            "type": "if_action",
+            "named": true
+          },
+          {
+            "type": "imaginary_literal",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "interpreted_string_literal",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "nil",
+            "named": true
+          },
+          {
+            "type": "parenthesized_pipeline",
+            "named": true
+          },
+          {
+            "type": "range_action",
+            "named": true
+          },
+          {
+            "type": "raw_string_literal",
+            "named": true
+          },
+          {
+            "type": "rune_literal",
+            "named": true
+          },
+          {
+            "type": "selector_expression",
+            "named": true
+          },
+          {
+            "type": "template_action",
+            "named": true
+          },
+          {
+            "type": "text",
+            "named": true
+          },
+          {
+            "type": "true",
+            "named": true
+          },
+          {
+            "type": "variable",
+            "named": true
+          },
+          {
+            "type": "variable_definition",
+            "named": true
+          },
+          {
+            "type": "with_action",
+            "named": true
+          },
+          {
+            "type": "{{",
+            "named": false
+          },
+          {
+            "type": "{{-",
+            "named": false
+          },
+          {
+            "type": "}}",
+            "named": false
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "block_action",
+          "named": true
+        },
+        {
+          "type": "chained_pipeline",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "define_action",
+          "named": true
+        },
+        {
+          "type": "dot",
+          "named": true
+        },
+        {
+          "type": "false",
+          "named": true
+        },
+        {
+          "type": "field",
+          "named": true
+        },
+        {
+          "type": "float_literal",
+          "named": true
+        },
+        {
+          "type": "function_call",
+          "named": true
+        },
+        {
+          "type": "html",
+          "named": true
+        },
+        {
+          "type": "if_action",
+          "named": true
+        },
+        {
+          "type": "imaginary_literal",
+          "named": true
+        },
+        {
+          "type": "int_literal",
+          "named": true
+        },
+        {
+          "type": "interpreted_string_literal",
+          "named": true
+        },
+        {
+          "type": "method_call",
+          "named": true
+        },
+        {
+          "type": "nil",
+          "named": true
+        },
+        {
+          "type": "parenthesized_pipeline",
+          "named": true
+        },
+        {
+          "type": "range_action",
+          "named": true
+        },
+        {
+          "type": "raw_string_literal",
+          "named": true
+        },
+        {
+          "type": "rune_literal",
+          "named": true
+        },
+        {
+          "type": "selector_expression",
+          "named": true
+        },
+        {
+          "type": "template_action",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        },
+        {
+          "type": "true",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        },
+        {
+          "type": "variable_definition",
+          "named": true
+        },
+        {
+          "type": "with_action",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -750,6 +1031,10 @@
           },
           {
             "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "html",
             "named": true
           },
           {
@@ -965,6 +1250,10 @@
             "named": true
           },
           {
+            "type": "html",
+            "named": true
+          },
+          {
             "type": "if_action",
             "named": true
           },
@@ -1092,6 +1381,10 @@
           },
           {
             "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "html",
             "named": true
           },
           {
@@ -1363,6 +1656,10 @@
             "named": true
           },
           {
+            "type": "html",
+            "named": true
+          },
+          {
             "type": "if_action",
             "named": true
           },
@@ -1490,6 +1787,10 @@
           },
           {
             "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "html",
             "named": true
           },
           {
@@ -1923,6 +2224,10 @@
           "named": true
         },
         {
+          "type": "html",
+          "named": true
+        },
+        {
           "type": "if_action",
           "named": true
         },
@@ -2096,11 +2401,6 @@
     }
   },
   {
-    "type": "text",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "variable",
     "named": true,
     "fields": {
@@ -2264,6 +2564,10 @@
           },
           {
             "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "html",
             "named": true
           },
           {
@@ -2479,6 +2783,10 @@
             "named": true
           },
           {
+            "type": "html",
+            "named": true
+          },
+          {
             "type": "if_action",
             "named": true
           },
@@ -2595,11 +2903,27 @@
     "named": false
   },
   {
+    "type": "/>",
+    "named": false
+  },
+  {
     "type": ":=",
     "named": false
   },
   {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "</",
+    "named": false
+  },
+  {
     "type": "=",
+    "named": false
+  },
+  {
+    "type": ">",
     "named": false
   },
   {
@@ -2632,10 +2956,6 @@
   },
   {
     "type": "false",
-    "named": true
-  },
-  {
-    "type": "field_identifier",
     "named": true
   },
   {
@@ -2677,6 +2997,10 @@
   {
     "type": "template",
     "named": false
+  },
+  {
+    "type": "text",
+    "named": true
   },
   {
     "type": "true",
